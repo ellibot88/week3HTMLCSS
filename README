@@ -1,0 +1,49 @@
+HTML & CSS Markup Languages
+
+HTML
+Hyper Text Markup Language
+How to declare that a document is HTML: <!DOCTYPE html></html>
+Fundamental unit of an HTML page is the Element
+
+<p></p> <h1></h1> <div></div>
+Self-closing tags such as <img> only have one tag for the entire element
+Attributes are used to configure elements (<input type = "password">)
+Boolean attributes default to false (no need to declare if you want false) (<input required>) or (<input required = "true")
+h1 - h6 for header tags (there isn't anything beyond h6)
+Meta tags are declared with <meta/>
+
+CSS
+Cascading Style Sheets
+Basic syntax for CSS: elementTagName {
+background-color: green;
+font-size: 24px;
+}
+CSS can also react to some user interaction and create animations
+CSS selectors are how we style certain HTML elements
+You can have multiple selectors declared by adding ',' between each (h1,h2,h3{ CSS HERE })
+h1, h2, h3 {
+color: teal;
+margin: 20px;
+}
+Child Selector: selects only direct children of element (p > span {})
+Descendant Selector: selects children, grandchildren of element (div span{})
+Inline vs Internal vs External Styling
+
+<style>
+    
+</style>
+
+Internal CSS overrides external CSS stylesheets
+CSS is read from top to bottom; declarations lower in the file will override previous declarations about the element
+You can have all CSS selectors in one stylesheet that can be linked to the HTML doc at the beginning (<rel="styleSheet" href="/test.css">
+Block vs Inline Elements
+Common CSS Font Properties: font-size, font-weight, color, line-height, text-align, font-family, letter-spacing
+You can bring in fonts not native to the browser using a link tag and the URL of the font
+
+<link href= "https://fonts.googleapis.com/css?family=helveticaNeue" rel="stylesheet"/>
+
+Common CSS Background Properties: background-color, background-image, background-size, background-position, background-repeat
+
+Absolute vs Relative Units
+Absolute: exact measurements such as "cm, px, pt"
+Relative: relative units compared to different elements on the page such as "em, rem, vw, vh, %"

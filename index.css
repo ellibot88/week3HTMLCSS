@@ -1,0 +1,30 @@
+p {
+  font-size: 24px;
+  color: rgb(53, 53, 53);
+  font-weight: 100;
+  border-style: dashed;
+  border-width: 3px;
+  border-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+h2 {
+  font-size: 48px;
+  color: rgb(0, 139, 253);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+button {
+  background-color: aquamarine;
+  color: rgb(116, 116, 116);
+}
+img {
+  height: 25vh;
+  width: 25vh;
+}
+body {
+  background-color: rgb(214, 214, 214);
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: justify;
+}
