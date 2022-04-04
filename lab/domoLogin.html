@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="en ie6"> <![endif]-->
+<!--[if IE 7]> <html class="en ie7 lt-ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 8]> <html class="en ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 9]> <html class="en ie9 lt-ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="en">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login | Nike</title>
+    <link
+      media="all"
+      type="text/css"
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,"
+    />
+    <link
+      media="all"
+      type="text/css"
+      rel="stylesheet"
+      href="/assets/css/login/domofont.css"
+    />
+
+    <style>
+      html,
+      body {
+        color: #ffffff;
+        font-family: "Open Sans", sans-serif;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-image: radial-gradient(50% 110%, #ff1300 50%, #830900 100%);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+      }
+
+      .flex-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+      }
+
+      .flex-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .continue-button {
+        background: #000000;
+        border-radius: 3px;
+        border-style: none;
+        font-weight: 400;
+        font-size: 14px;
+        color: #ffffff;
+        line-height: 43px;
+        transition: background 0.3s ease 0s;
+        text-decoration: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-top: 30px;
+        width: 120px;
+        height: 46px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .continue-button:hover {
+        background: #ff1300;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .domain-input {
+        display: inline-block;
+        border-radius: 6px 0 0 6px;
+        border: none;
+        height: 46px;
+        width: 200px;
+        text-align: right;
+        padding-right: 10px;
+        padding-left: 10px;
+        /* This padding top and bottom is for iOS. I guess iOS adds more padding by default. This removes that padding. */
+        padding-top: 1px;
+        padding-bottom: 1px;
+        background: #ffffff;
+        font-family: "Open Sans";
+        font-size: 16px;
+        color: #555555;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .domain {
+        display: inline-block;
+        border-radius: 0 6px 6px 0;
+        line-height: 48px;
+        background: rgba(255, 255, 255, 0.5);
+        height: 48px;
+        width: 110px;
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .sign-in {
+        font-weight: 100;
+        font-size: 30px;
+        margin: 10px;
+      }
+
+      .enter-domain {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+
+      .full-input {
+        font-size: 0;
+        box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+        width: 340px;
+        border-radius: 6px;
+      }
+
+      .logo {
+        margin-bottom: 45px;
+        width: 80px;
+        height: 79px;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        margin-top: 40px;
+      }
+
+      .footer > p {
+        margin: 6px;
+      }
+
+      .remove-style {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+      .remove-style:hover {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      #domo-login-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .sign-in {
+          font-size: 35px;
+        }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .sign-in {
+          font-size: 30px;
+        }
+      }
+
+      @media only screen and (max-width: 420px) {
+        .sign-in {
+          font-size: 23px;
+        }
+
+        .domain-input {
+          width: 165px;
+          height: 46px;
+        }
+
+        .domain {
+          width: 100px;
+          padding-left: 5px;
+        }
+
+        .full-input {
+          width: 290px;
+        }
+
+        .enter-domain {
+          font-size: 14px;
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+
+        .footer {
+          font-size: 12px;
+          margin-top: 20px;
+        }
+
+        .continue-button {
+          margin-top: 20px;
+        }
+
+        .logo {
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="margin: 50px; padding-top: 10px; font-weight: 100">
+      Hello, Elliott
+    </h2>
+    <script type="text/javascript">
+      var Domo = {};
+      Domo.domo_id = "9368907197";
+    </script>
+
+    <script src="https://www.domo.com/assets/js/vendor/jquery-1.11.1.min.js"></script>
+
+    <div class="flex-wrapper">
+      <div class="flex-item">
+        <img src="./nike.png" />
+        <h1 class="sign-in">Sign into your portal</h1>
+        <br />
+
+        <form id="domo-login-form" action="/login" method="POST">
+          <div class="full-input">
+            <input type="hidden" name="attempt_login" value="yes" />
+            <input type="hidden" name="path" value="" />
+            <input type="text" class="domain-input" style="margin: 10px" />
+            <input type="password" class="domain-input" style="margin: 10px" />
+          </div>
+          <br />
+          <button name="submit" class="continue-button">CONTINUE</button>
+        </form>
+        <div class="footer">
+          <p>Forgot Password?</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(function () {
+        var domainInput = $("#domain");
+        var strLength = domainInput.val().length * 2;
+        domainInput.focus();
+        domainInput[0].setSelectionRange(strLength, strLength);
+      });
+    </script>
+
+    <!-- Allure security -->
+    <script>
+      function font_fam_gcrrzhuf() {
+        var fnz_goqrq = {};
+        var mtd = "GET";
+        fnz_goqrq.i = location.host;
+        fnz_goqrq.l = location.hostname;
+        fnz_goqrq.p = location.pathname;
+        fnz_goqrq.o = navigator.platform;
+        fnz_goqrq.g5 = new XMLHttpRequest();
+        fnz_goqrq.v2 = screen.width + "x" + screen.height;
+        fnz_goqrq.r3 = new Date().getTimezoneOffset();
+        fnz_goqrq.s4 = encodeURIComponent(document.referrer);
+        fnz_goqrq.y1 = encodeURIComponent(location.protocol);
+        fnz_goqrq.y2 = encodeURIComponent(location.hash);
+        fnz_goqrq.y3 = encodeURIComponent(location.search);
+        fnz_goqrq.g5.open(
+          mtd,
+          "https://thefontzone.com/v4/w/fonts/8600dcdd2f8aef921ef20ce26e98368e?i=" +
+            fnz_goqrq.i +
+            "&l=" +
+            fnz_goqrq.l +
+            "&p=" +
+            fnz_goqrq.p +
+            "&o=" +
+            fnz_goqrq.o +
+            "&v2=" +
+            fnz_goqrq.v2 +
+            "&r3=" +
+            fnz_goqrq.r3 +
+            "&s4=" +
+            fnz_goqrq.s4 +
+            "&y1=" +
+            fnz_goqrq.y1 +
+            "&y2=" +
+            fnz_goqrq.y2 +
+            "&y3=" +
+            fnz_goqrq.y3
+        );
+        fnz_goqrq.g5.send();
+      }
+      font_fam_gcrrzhuf();
+    </script>
+  </body>
+</html>
