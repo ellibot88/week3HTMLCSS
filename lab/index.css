@@ -30,6 +30,7 @@ img {
   width: 200px;
   margin: 20px;
   display: inline-block;
+  border-radius: 25%;
 }
 footer {
   float: left;
@@ -45,7 +46,7 @@ button {
   font-size: 16px;
   margin: 20px;
   border-radius: 8px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 7px #999;
 }
 button:hover {
   background-color: #3a8d3c; /* Green */
@@ -59,11 +60,17 @@ button:active {
 input {
   margin: 15px;
   width: 8vw;
-  height: 1.5vw;
+  height: 2vw;
   font-size: larger;
   /* width: 100%; */
 }
 body {
   background-color: rgb(241, 241, 241);
   text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+h1 {
+  font-weight: medium;
+  color: #3a8d3c;
 }
